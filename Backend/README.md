@@ -19,7 +19,6 @@ The request body should be a JSON object containing the following fields:
 | `password` | String | The password for the user account. Must be at least 6 characters. | Yes |
 
 #### Example Request Body
-```json
 {
     "fullName": {
         "firstname": "John",
@@ -28,9 +27,8 @@ The request body should be a JSON object containing the following fields:
     "email": "john.doe@example.com",
     "password": "securePassword123"
 }
-```json
 
-#Success Response (201 Created)
+###### Success Response (201 Created)
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
     "user": {
@@ -43,7 +41,7 @@ The request body should be a JSON object containing the following fields:
         "socketId": null
     }
 }
-#Error Responses
+# Error Responses
 {
     "errors": [
         {
@@ -53,7 +51,7 @@ The request body should be a JSON object containing the following fields:
         }
     ]
 }
-#Example Usages
+# Example Usages
 curl -X POST -H "Content-Type: application/json" -d '{
     "fullName": {
         "firstname": "John",
@@ -64,7 +62,6 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }' http://localhost:4000/user/register
 
 
-#
 {
     "fileName": "Backend/README.md"
 }
