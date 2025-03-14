@@ -19,14 +19,14 @@ The request body should be a JSON object containing the following fields:
 | `password` | String | The password for the user account. Must be at least 6 characters. | Yes |
 
 #### Example Request Body
--{
-    -"fullName": {
-       - "firstname": "John",
-        -"lastname": "Doe"
-    -},
-    -"email": "john.doe@example.com",
-    -"password": "securePassword123"
--}
+{
+    "fullName": {
+        "firstname": "John",
+        "lastname": "Doe"
+    },
+    "email": "john.doe@example.com",
+    "password": "securePassword123"
+}
 
 ###### Success Response (201 Created)
 {
