@@ -28,6 +28,7 @@ The request body should be a JSON object containing the following fields:
     "email": "john.doe@example.com",
     "password": "securePassword123"
 }
+```json
 
 #Success Response (201 Created)
 {
@@ -63,7 +64,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }' http://localhost:4000/user/register
 
 
-#```json
+#
 {
     "fileName": "Backend/README.md"
 }
