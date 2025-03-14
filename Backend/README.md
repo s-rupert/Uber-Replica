@@ -29,7 +29,7 @@ The request body should be a JSON object containing the following fields:
     "password": "securePassword123"
 }
 
-Success Response (201 Created)
+#Success Response (201 Created)
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
     "user": {
@@ -42,7 +42,7 @@ Success Response (201 Created)
         "socketId": null
     }
 }
-Error Responses
+#Error Responses
 {
     "errors": [
         {
@@ -52,7 +52,7 @@ Error Responses
         }
     ]
 }
-Example Usages
+#Example Usages
 curl -X POST -H "Content-Type: application/json" -d '{
     "fullName": {
         "firstname": "John",
@@ -63,7 +63,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }' http://localhost:4000/user/register
 
 
-```json
+#```json
 {
     "fileName": "Backend/README.md"
 }
